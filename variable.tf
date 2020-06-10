@@ -61,8 +61,8 @@ variable "tenant_domain" {
 }
 variable "luminate_user" {
   //default = "mike@mwinslowdemo.local"
-  //default = "michael.winslow@broadcom.com"
-  default = "mikewinslow@symcmwinslow.luminatesite.com"
+  default = "michael.winslow@broadcom.com"
+  //default = "mikewinslow@symcmwinslow.luminatesite.com"
 }
 variable "luminate_group" {
   default = "Developers"

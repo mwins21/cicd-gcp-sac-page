@@ -36,6 +36,14 @@ jobs:
         TF_VAR_git_repo: ${{ github.repository }}
         TF_VAR_git_branch: ${{ github.head_ref }}
       run: terraform init -input=false
+    - name: Terraform plan
+      env:
+        GOOGLE_APPLICATION_CREDENTIALS: ${{ github.workspace }}/gcp_cred.json
+        LUMINATE_API_CLIENT_ID: ${{ secrets.LUMINATE_API_CLIENT_ID }}
+        LUMINATE_API_CLIENT_SECRET: ${{ secrets.LUMINATE_API_CLIENT_SECRET }}
+        TF_VAR_git_repo: ${{ github.repository }}
+        TF_VAR_git_branch: ${{ github.head_ref }}
+      run: terraform plan -input=false
     - name: Terraform validation
       run: terraform validate
       env:

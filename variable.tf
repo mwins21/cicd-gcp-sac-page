@@ -59,11 +59,17 @@ variable "tags" {
 variable "tenant_domain" {
   default = "symcmwinslow.luminatesite.com"
 }
+
+variable "luminate_idp" {
+  default = "My-SAC-Okta"
+}
+
 variable "luminate_user" {
   //default = "mike@mwinslowdemo.local"
   default = "michael.winslow@broadcom.com"
   //default = "mikewinslow@symcmwinslow.luminatesite.com"
 }
+
 variable "luminate_group" {
   default = "Developers"
   //default = "Developer"

@@ -9,7 +9,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: Install Terraform
       env:
-            TERRAFORM_VERSION: "0.12.24"
+            TERRAFORM_VERSION: "0.15.4"
             GCP_SECRET: ${{ secrets.GCP_SECRET }}
       run: |
         tf_version=$TERRAFORM_VERSION

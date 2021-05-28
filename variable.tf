@@ -61,7 +61,7 @@ variable "tenant_domain" {
 }
 
 variable "luminate_idp" {
-  default = "My-SAC-Okta"
+  default = "SAC-Okta"
 }
 
 variable "luminate_user" {

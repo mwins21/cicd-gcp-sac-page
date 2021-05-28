@@ -17,7 +17,7 @@ provider "google" {
 
 # Locks the version of Terraform for this particular use case
 terraform {
-  //required_version = "~>0.12.0"
+  required_version = "~>0.15.0"
     backend "gcs" {
     bucket  = "mwinslow-tf-state-prod"
     prefix  = "terraform/state"

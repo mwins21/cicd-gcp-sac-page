@@ -97,7 +97,7 @@ resource "luminate_web_access_policy" "web-access-policy" {
 data "luminate_identity_provider" "idp" {
   //identity_provider_name = var.luminate_idp
   //identity_provider_name = "SAC-Okta"
-  identity_provider_name = "local"
+  identity_provider_name = "Local"
 }
 
 data "luminate_user" "users" {

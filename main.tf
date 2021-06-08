@@ -98,7 +98,7 @@ data "luminate_identity_provider" "idp" {
   //identity_provider_name = var.luminate_idp
   //identity_provider_name = "SAC-Okta"
   //identity_provider_name = "Local"
-  identity_provider_name = "PartnerCloudLabAD"
+  identity_provider_name = "PCL"
 }
 
 data "luminate_user" "users" {
